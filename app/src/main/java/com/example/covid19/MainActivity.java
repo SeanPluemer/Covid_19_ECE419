@@ -22,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.buttonDataList).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LocalDataActivity.class));
+            }
+        });
+
 
 /*
         mpLineChart = (LineChart) findViewById(R.id.line_chart);

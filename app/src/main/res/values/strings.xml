@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Covid 19</string>
     <string name="line_chart">line_chart</string>
+    <string name="downloaded_data">Downloaded Data</string>
 </resources>
