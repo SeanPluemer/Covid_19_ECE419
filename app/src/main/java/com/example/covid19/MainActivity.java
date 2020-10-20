@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-//Sean 
+//Sean
 public class MainActivity extends AppCompatActivity {
 
 
