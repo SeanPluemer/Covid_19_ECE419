@@ -21,6 +21,13 @@
         android:layout_height="wrap_content"
         android:text="@string/downloaded_data"/>
 
+    <Button
+        android:id="@+id/buttonLoginScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_log_in"/>
+
+
 
 
 

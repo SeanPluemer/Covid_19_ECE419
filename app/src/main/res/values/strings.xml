@@ -2,4 +2,5 @@
     <string name="app_name">Covid 19</string>
     <string name="line_chart">line_chart</string>
     <string name="downloaded_data">Downloaded Data</string>
+    <string name="go_to_log_in">Go To Log In</string>
 </resources>
