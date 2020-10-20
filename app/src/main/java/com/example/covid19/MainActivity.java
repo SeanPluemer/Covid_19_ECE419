@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), LocalDataActivity.class));
             }
+
+        });
+        findViewById(R.id.buttonLoginScreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LogIn.class));
+            }
         });
 
 
