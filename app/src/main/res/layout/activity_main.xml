@@ -15,6 +15,13 @@
         android:layout_height="wrap_content"
         android:text="@string/line_chart"/>
 
+    <Button
+        android:id="@+id/buttonDataList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/downloaded_data"/>
+
+
 
 
 </LinearLayout>
