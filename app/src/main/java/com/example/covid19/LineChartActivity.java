@@ -69,7 +69,7 @@ public class LineChartActivity extends AppCompatActivity {
         //lineChart.setFitBars(true);
         lineChart.setData(lineData);
         lineChart.getDescription().setText("Line Chart Example");
-        lineChart.animateX(2000);
+        lineChart.animateX(200);
 
 
 
