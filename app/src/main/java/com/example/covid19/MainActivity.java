@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+<<<<<<< Updated upstream
 //Sean
 public class MainActivity extends AppCompatActivity {
 
