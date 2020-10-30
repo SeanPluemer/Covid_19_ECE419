@@ -1,10 +1,9 @@
 package com.example.covid19;
 
-import androidx.annotation.RequiresPermission;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,30 +13,25 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocalDataActivity extends AppCompatActivity {
+public class ReadWatchData extends AppCompatActivity {
 
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_local_data);
+        //setContentView(R.layout.activity_local_data);
         setTitle("Local Data");
 
 
-       // readTemperatureData();
-        //readWatchData();
-        WatchData data = new WatchData();
-        data.readWatchData();
-        double a = data.getMeasuredTempC();
-        System.out.println(a);
+        // readTemperatureData();
+        readWatchData();
+        //double a = watchDataArray.get(0).getMeasuredTempC();
+        // System.out.println(a);
 
-        //ReadWatchData test = new ReadWatchData();
-       // double a = test.getMeasuredTempC();
-
+        readWatchData();
     }
 
-/*
     public List<WatchData> watchDataArray = new ArrayList<>();
-    public void readWatchData(){
+
+    private void readWatchData() {
         InputStream is = getResources().openRawResource(R.raw.test);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
@@ -61,18 +55,17 @@ public class LocalDataActivity extends AppCompatActivity {
                 //is this needed?
                 watchDataArray.add(watchData);
 
-                Log.d("MyActivity", "Just Created" + watchData);
-               // System.out.println("I is: " + i);
+                //Log.d("MyActivity", "Just Created" + watchData);
+                // System.out.println("I is: " + i);
                 i++;
 
 
             }
 
         } catch (IOException e) {
-            Log.wtf("MyActivity","Errpr reading data file on line" + line, e);
+            Log.wtf("MyActivity", "Errpr reading data file on line" + line, e);
             e.printStackTrace();
         }
+    }
+}
 
-    }
-*/
-    }

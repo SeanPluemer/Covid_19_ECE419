@@ -1,22 +1,19 @@
 package com.example.covid19;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
@@ -26,12 +23,35 @@ public class LineChartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_line_chart);
+
+
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_line_chart);
+
         setTitle("LineChartTime");
         LineChart lineChart = findViewById(R.id.lineChart);
+
+        findViewById(R.id.buttonUpdateGraph).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // startActivity(new Intent(getApplicationContext(), LocalDataActivity.class));
+                WatchData test = new WatchData();
+                test.readWatchData();
+                //test.WatchData();
+
+
+
+
+                double a = test.getLocationMeasured();
+                System.out.println("I am here: " + test);
+
+                //new LocalDataActivity();
+                //startActivity(new Intent(getApplicationContext(), LocalDataActivity.class));
+            }
+        });
 
         // no description text
         lineChart.getDescription().setEnabled(false);

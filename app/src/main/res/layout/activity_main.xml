@@ -33,6 +33,11 @@
         android:layout_height="wrap_content"
         android:text="@string/go_to_log_in"/>
 
+    <Button
+        android:id="@+id/buttonSyncToWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sync_to_watch" />
 
 
 </LinearLayout>
