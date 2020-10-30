@@ -8,6 +8,14 @@ import android.view.View;
 
 <<<<<<< Updated upstream
 //Sean
+=======
+ //Log-In-Screen
+//chris//
+
+
+
+ //Develop
+>>>>>>> Stashed changes
 public class MainActivity extends AppCompatActivity {
 
 
