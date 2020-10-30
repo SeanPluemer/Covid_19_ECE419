@@ -6,16 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-<<<<<<< Updated upstream
-//Sean
-=======
- //Log-In-Screen
-//chris//
+
+
+
 
 
 
  //Develop
->>>>>>> Stashed changes
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -35,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), LocalDataActivity.class));
+            }
+
+        });
+        findViewById(R.id.buttonLoginScreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LogIn.class));
             }
         });
 
